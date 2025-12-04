@@ -10,6 +10,7 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -58,32 +59,60 @@
         </ul>
       </div>
     </nav>
-    <form class="form-signin">
-      <div class="text-center mb-4">
-        <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-        <h1 class="h3 mb-3 font-weight-normal">Floating labels</h1>
-        <p>Build form controls with floating labels via the <code>:placeholder-shown</code> pseudo-element. <a href="https://caniuse.com/#feat=css-placeholder-shown">Works in latest Chrome, Safari, and Firefox.</a></p>
-      </div>
-
-      <div class="form-label-group">
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="" fdprocessedid="jdi7re">
-        <label for="inputEmail">Email address</label>
-      </div>
-
-      <div class="form-label-group">
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="" fdprocessedid="t6uo4">
-        <label for="inputPassword">Password</label>
-      </div>
-
-      <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-      </div>
-      <button class="btn btn-lg btn-primary btn-block" type="submit" fdprocessedid="ttnfw8">Sign in</button>
-      <p class="mt-5 mb-3 text-muted text-center">© 2017-2018</p>
-    </form>
-    
+    <!-- <div class="d-flex align-items-center py-4 bg-body-tertiary"> -->
+    <div class="d-flex justify-content-center align-items-center">
+      <main class="form-signin w-50">
+        <form>
+          <img
+            class="mb-4"
+            src="/docs/5.3/assets/brand/bootstrap-logo.svg"
+            alt=""
+            width="72"
+            height="57"
+          />
+          <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+          <div class="form-floating">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+              fdprocessedid="0i2w2"
+            />
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="Password"
+              fdprocessedid="ckfez"
+            />
+            <label for="floatingPassword">Password</label>
+          </div>
+          <div class="form-check text-start my-3">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="remember-me"
+              id="checkDefault"
+            />
+            <label class="form-check-label" for="checkDefault">
+              Remember me
+            </label>
+          </div>
+          <button
+            class="btn btn-primary w-100 py-2"
+            type="submit"
+            fdprocessedid="fqlevm"
+          >
+            Sign in
+          </button>
+          <p class="mt-5 mb-3 text-body-secondary">© 2017–2025</p>
+        </form>
+      </main>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
