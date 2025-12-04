@@ -16,5 +16,13 @@
     "morgan": "^1.10.1",
     "nodemon": "^3.1.11",
     "parser": "^0.1.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yairhalevi123-star/project-yair_ilian.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yairhalevi123-star/project-yair_ilian/issues"
+  },
+  "homepage": "https://github.com/yairhalevi123-star/project-yair_ilian#readme"
 }
