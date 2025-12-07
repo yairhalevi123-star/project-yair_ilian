@@ -41,10 +41,10 @@ app.post("/submit", (req, res) => {
   const urlFromForm = req.body.floatingInput;
   if (!urlFromForm) {
     return res.status(400).send("שגיאה: חסר נתון להזנה.");
+  } else {
+    const vg_string = qr.imageSync(urlFromForm, { type: "svg" });
+    res.type("svg").send(vg_string);
   }
-
-  const vg_string = qr.imageSync("I love QR!", { type: "svg" });
-  res.type("svg").send(vg_string);
 });
 app.listen(port, () => {
   console.log(`app listen on port : ${port}`);

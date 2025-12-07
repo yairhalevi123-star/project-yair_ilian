@@ -7,7 +7,6 @@ $("#submit").on("click", (e) => {
     type: "POST",
     data: { floatingInput: URLL },
     success: function (response) {
-      console.log("Success:", response);
       $("#qrContainer").html(response);
     },
     error: function (xhr, status, error) {
