@@ -12,7 +12,6 @@ $("#submit").on("click", (e) => {
           <div class="card-body">
             <h5 class="card-title">QR Code</h5>
             <div class="card-text">${data}</div>
-            <a href="${URLL}" target="_blank" class="btn btn-primary mt-2">Go to URL</a>
           </div>
         </div>
       `);
