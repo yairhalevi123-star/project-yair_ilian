@@ -8,9 +8,9 @@ $("#submit").on("click", (e) => {
     data: { floatingInput: URLL },
     success: function (data) {
       const card = $(`
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 18rem">
           <div class="card-body">
-            <h5 class="card-title">QR Code</h5>
+            <h2 class="card-title ms-5">QR Code</h5>
             <div class="card-text">${data}</div>
           </div>
         </div>
